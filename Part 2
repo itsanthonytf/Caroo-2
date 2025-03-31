@@ -1,0 +1,12 @@
+class Car extends Vehicle {
+    constructor(make, model, year) {
+        super(make, model, year);
+        this.numWheels = 4;
+    }
+}
+
+// Example usage:
+let myFirstCar = new Car("Toyota", "Corolla", 2005);
+console.log(myFirstCar.toString()); // "The vehicle is a Toyota Corolla from 2005."
+console.log(myFirstCar.honk());     // "Beep."
+console.log(myFirstCar.numWheels);  // 4
